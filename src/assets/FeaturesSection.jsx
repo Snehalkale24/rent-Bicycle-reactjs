@@ -25,14 +25,14 @@ const FEATURES_CONFIG = [
 function FeaturesSection() {
   return (
     <div>
-      <h2 className='text-center text-30xl text-orange-950 '>Why Choose Our Bicycle Rental Service?</h2>
+      <h2 className='text-center text-30xl text-gray-600 text-2xl font-bold pt-3 '>Why Choose Our Bicycle Rental Service?</h2>
 
 
       <div className="flex m-10 ">{FEATURES_CONFIG.map((feactureObj) => {
         const { title, description, icon } = feactureObj;
 
         return (
-          <div key={title}className="m-3 p-4 bg-orange-200 ">
+          <div key={title}className="m-3 p-4 bg-orange-200 rounded-2xl">
             {icon}
           <h3 className="font-bold font-serif p-2">{title}</h3>
           <p>{description}</p>
