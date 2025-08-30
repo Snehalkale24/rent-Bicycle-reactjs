@@ -32,7 +32,7 @@ function FeaturesSection() {
         const { title, description, icon } = feactureObj;
 
         return (
-          <div key={title}className="m-3 p-4 bg-orange-200 rounded-2xl">
+          <div key={title}className= " m-10 p-5 bg-white rounded-2xl shadow-lg w-72 transition-transform duration-300 hover:scale-105 shadow-orange-300">
             {icon}
           <h3 className="font-bold font-serif p-2">{title}</h3>
           <p>{description}</p>

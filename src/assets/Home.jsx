@@ -2,7 +2,8 @@ import Navbar from './Navbar.jsx';
 import Img2 from '../assets/Img2.png';
 import FeaturesSection from './FeaturesSection.jsx';
 import ReviewSection from './ReviewSection.jsx';
-import ReviewSection from './ReviewSection.jsx';
+import ExploreSection from './ExploreSection.jsx';
+
 
 
 function Home() {
@@ -15,6 +16,7 @@ function Home() {
         
          <FeaturesSection/>
          <ReviewSection/>
+         <ExploreSection/>
     </div>
     
   )
