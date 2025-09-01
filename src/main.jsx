@@ -6,6 +6,7 @@ import './index.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Home.jsx';
 import Explore from './assets/Explore.jsx';
+import BicycleDetails from './assets/Bicycledetails.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 
@@ -13,6 +14,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/explore" element={<Explore />} />
+      <Route path="/bicycledetails" element={<BicycleDetails/>}/>
     </Routes>
   </BrowserRouter>
 );
