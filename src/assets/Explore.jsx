@@ -4,7 +4,7 @@ import Img3 from "./Img3.png";
 import { Link } from "react-router-dom";
 import Bicycledetails from "./Bicycledetails.jsx";
 
-const EXPLORE = [
+ export const EXPLORE = [
   {
     id: 1,
     name: "Mountain Bike",
