@@ -3,7 +3,6 @@ import { useSearchParams } from 'react-router-dom';
 import Navbar from './Navbar';
 import { EXPLORE } from './Explore.jsx'; 
 
-
 function Bicycledetails() {
   const [searchParams] = useSearchParams();
   const id = parseInt(searchParams.get("id")); 
@@ -11,10 +10,10 @@ function Bicycledetails() {
   const bicycle = EXPLORE.find(b => b.id === id);
 
   const [currentImage, setCurrentImage] = useState(0);
-  cont [searchParamd]=setSearParas}
-  const [bookingDetails,setBookingDetains]=useState({
+  const [searchParamd] = setSearParas
+  const [bookingDetails, setBookingDetaiss] = useState({
     bking
-  })
+  });
 
   const images = Array.isArray(bicycle.images) ? bicycle.images : [bicycle.images];
 
@@ -27,7 +26,6 @@ function Bicycledetails() {
       <p className='m-4'>{bicycle.description}</p>
       <p className='m-4'>Price: {bicycle.rentalPrice}</p>
 
-     
       <div>
         {images.map((image, index) => (
           <img
@@ -47,6 +45,10 @@ function Bicycledetails() {
         width="300"
         style={{ marginTop: '10px' }}
       />
+      
+      <div className='w-[500px] bg-amber-500 mx-auto px-10 py-10 shadow-lg'>
+        <h2>Booking Form</h2>
+      </div>
     </div>
   );
 }
